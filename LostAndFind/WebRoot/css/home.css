@@ -1,0 +1,25 @@
+@charset="utf-8";
+/*  网站自动轮播图片*/
+#slidr-img{
+	display:inline-block;
+    width:100%;
+    margin-top:3px;
+
+}
+#slidr-img img{
+ height:300px;
+width:100%;
+}
+.footer-text{
+	text-align:center;
+}
+.border-style{
+	border:1px solid #d1d1d1;
+	boder-top:none;
+}
+footer{
+	margin-top:8px;
+}
+body{
+	padding-top:70px;
+}

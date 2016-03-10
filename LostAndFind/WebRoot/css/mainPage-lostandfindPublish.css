@@ -1,0 +1,33 @@
+#lostandfind-publish{
+	position:fixed;
+	background-color:grey;
+	border-radius:9px;
+	width:700px;
+	height:400px;
+	top:28%;
+	left:25%;
+	display:none;
+}
+table{
+	color:white;
+	margin-left:10%;
+	height:180px;
+}
+tr{
+	margin:8px;
+}
+.commonTd{
+	width:100px;
+	height:40px;
+}
+#title{
+	width:380px;
+	height:40px;
+}
+#eventDate{
+	height:40px;
+}
+#insertSuccess,#insertFailed{
+	display:none;
+	text-align:center;
+}

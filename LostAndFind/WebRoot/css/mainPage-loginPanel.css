@@ -1,0 +1,43 @@
+#loginPanel{
+	position:fixed;
+	left:35%;
+	top:25%;
+	width:500px;	
+	height:250px;
+	background-color: rgba(122,122,122,0.9);
+    text-align:center;
+    border-radius:20px;
+     display:none; 
+}
+
+.commonDiv{
+	height:50px;	
+	color:white;
+} 
+.commonInput{
+	width:280px;
+	height:35px;
+	border-radius:5px;
+	text-indent:3px;
+}
+.commonDiv:first-child{
+    margin-top:50px;
+}
+.commonDiv:last-child{
+	margin-top:30px;
+}
+.tipStyle{
+	color:white;
+	height:35px;	
+}
+#divSubmit{
+	margin-top:12px;
+}
+.button{
+	border-radius:5px;
+	width:60px;
+    height:40px;
+    background-color:rgba(45,23,23,0.2);  
+    cursor:pointer;
+    color:white;
+}

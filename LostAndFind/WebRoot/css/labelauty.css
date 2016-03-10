@@ -1,0 +1,39 @@
+﻿.rdolist, .chklist {
+    display: none;
+}
+
+.rdobox, .chkbox {
+	margin:0;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    background: #eee;
+    border-radius: 3px;
+    color: #666;
+    font-family: 'Microsoft YaHei';
+}
+
+.check-image {
+    display: inline-block;
+    width: 16px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.unchecked {
+    background: #ECF0F1;
+    color: #666;
+    transition-property: background;
+    transition-delay: 0s;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+    .unchecked:hover {
+        background: #dedfe0;
+    }
+
+.checked {
+    background: #3498DB;
+    color: #fff;
+}

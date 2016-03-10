@@ -1,0 +1,213 @@
+body{
+	margin:0;
+	background-color:rgba(122,122,122,0.1);
+}
+.main-container{
+	min-height:450px;
+	margin: 0 25px;
+	background-color:white;/* rgba(122,122,122,0.2); */
+	border-left:1px solid rgba(20,20,20,0.3);
+	border-right:1px solid rgba(20,20,20,0.3);
+}
+/*-----------------------------------以下为顶部导航条CSS---------------------  */
+.navigator-bar{
+	background-color:rgba(122,122,122,0.2);
+	width:100%;
+	height:40px;
+	text-align:center;
+}
+.navigator-barInner{
+	height:40px;
+	display:inline-block;
+	margin:0;
+	cursor:pointer;
+  
+}
+.navigator-barInner:first-child{ /* //设为首页 */
+	float:left;
+	margin-left:20px;
+	border-right:1px dotted black;
+	padding-right:4px;
+}
+.navigator-barInner:nth-child(2){/* //收藏本站 */
+	float:left;
+	margin-left:20px;
+	
+}
+.navigator-barInner:last-child{/* //登陆 */
+	float:right;
+	margin-right:20px;
+
+}
+
+.navigator-barInner:nth-child(3){ /* //注册 */
+	float:right;
+	margin-right:20px;
+	border-right-color:1px solid black;
+}
+.navigator-barInner:hover{
+    background-color:rgba(45,23,23,0.1);  
+	font-size:large;
+	height:30px;
+     text-decoration:underline;
+}
+
+/*---------------------------------主页标题图片CSS---------------------------  */
+.title-search-box{
+	width:100%;
+	height:60px;
+	margin-top:2px;
+    background-color:rgba(122,122,122,0.1);
+}
+
+.title-box{
+	margin-top:6px;
+    display:inline-block;
+}
+img[name="mianPage-titlePicture"]{
+	width:100px;
+	cursor:pointer;
+}
+.search-box{
+	display:inline-block;
+	margin-bottom:20px;
+	float:right; 
+ 
+}
+img[name="mianPage-titlePicture"]{
+	height:50px;
+	width:140px;
+	border-radius:2px;	
+}
+ input[name="search"]{  /* 查询按钮 */
+	border-radius:9px;
+	height:30px;
+	cursor:pointer;
+	background-image:url(../images/search.jpg);
+}
+input[name="searchBox"]{
+	height:30px;
+	width:280px;
+	border-radius:10px;
+	text-indent:3px;
+	border-color:rgba(45,23,23,0.2); 
+} 
+
+/* ------------------以下为siteMap网站导航CSS------------------------------------ */
+#siteMap{
+	width:100%;
+	height:50px;
+	margin:2px 0;
+}
+#siteMap-ulClass{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	text-align:center;
+	
+}
+.liClass{
+	display:inline-block;
+	width:19%;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	height:50px;
+	font-size:x-large;
+	border-left:1px solid #c0c0c0;  
+}
+.liClass:hover{
+	background-color:rgba(45,23,23,0.1);  
+   
+}
+.navFixed{
+	position:fixed;
+	top:0px;
+	left:0px];
+	background-color:white;
+    z-index:1;
+    
+}
+
+/* --------------------寻物启事和失物招领发布入口CSS--------------- */
+.publish-enter{
+	width:100%;
+	height:50px;
+	text-align:center;
+	margin-top:3px;
+}
+.publish-enter-common{
+	display:inline-block;
+	width:49%;
+	height:48px;
+}
+span>img{
+	cursor:pointer;
+}
+/* -----------------------------网站宣传图片CSS -----------------*/
+.advertisement-picture img{
+	width:100%;
+}
+
+/* ------------------------------信息展示栏CSS ------------------------------*/
+.showContainer{
+    min-height:100px;
+	margin-top:3px;
+    font-size:20px;
+}
+.showContainer-find{
+	width:49%;
+	display:inline-block;
+	margin:6px 0 4px 2px;                         /*这是实现两列不等高的栏前提下，让底部footer栏不上包围的关键点  */
+	border:1px solid #c0c0c0;
+	
+}
+.showContainer-lost{           /*注意这里不能和上面那样设置float值，直接流式布局便可  */
+	width:49%;
+	display:inline-block;
+	margin:6px 0 0 4px;
+    border:1px solid #e9e9e9;
+    background-color:#f2f2f2;
+}
+.showTitle{
+	background-color:#ff3e3e;
+	color:white;
+}
+.showUl{
+	width:100%;
+	margin:0;
+	padding:0;
+	
+}
+.showLi{
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.titleSpan{
+	float:left;
+	overflow:hidden;
+	clear:left;
+}
+.dateSpan{
+	float:right;
+	clear:right;
+}
+	/*-------------------友情链接-----------------------  */
+	.friendly-link{
+	clear:all;
+	}
+
+/*---------------------------以下为页面底部版权CSS--------------------  */
+
+.web-right{
+	background-color:#0080c0;
+	color:white;
+	margin-top:30px;
+	width:100%;
+    text-align:center;
+	vertical-align:middle; 
+	clear:all;
+}

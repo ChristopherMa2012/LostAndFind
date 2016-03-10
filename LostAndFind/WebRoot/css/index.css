@@ -1,0 +1,49 @@
+body{
+	background-image:url(../images/background1.jpg);
+	margin:0;
+}
+#outerContainer{
+   margin-left:60%;
+	margin-top:25%;
+	background-color: rgba(122,122,122,0.4);
+	min-width:250px;
+	max-width:300px;
+}
+#formContainer{
+  padding:5%  5% 0;
+  background-color: rgba(122,122,122,0.4);
+	min-width:250px;
+	max-width:300px;	
+} 
+
+.commonDiv{
+	margin-top:20px;
+	height:20px;
+		
+} 
+.commonInput{
+	border-radius:5px;
+	text-indent:3px;
+}
+.tipStyle{
+	float:right;
+}
+#submitButton{
+	margin-top:10px;
+	margin-left:38%;
+	border-radius:5px;
+	min-width:30%;
+    max-width: 34%;
+    height:28px;
+    background-color:rgba(45,23,23,0.2);  
+}
+#studentLoginLabel{
+	margin-left:190px;
+}
+a{
+	text-decoration:none;
+	font-size:15px;
+}
+form[name=studentLogin]{
+	display:none; 
+}

@@ -1,0 +1,14 @@
+﻿* {
+    margin:0;
+    padding:0;
+    font-family:'Microsoft YaHei';
+}
+
+body {
+    text-align:center;
+}
+
+.rdo,.fuxuan {
+    height:20px;
+    line-height:20px;
+}
