@@ -10,3 +10,15 @@
         浏览器：   Google 47.0.2526.106 m
                    Edge 
                    Firefox 40.0.3
+### 涉及到的知识技术	
+		jQuery、BootStrap、ajax
+### 版本说明
+
+##### version 1.0
+		*利用ajax实现了基本的登陆校验和用户注册
+		*jquery实现用户交互逻辑
+		*基本的信息查询和增加操作(搜索功能尚待完善)
+		*bootstrap实现响应式效果
+
+### version 1.1
+        #####正在施工中、、、
