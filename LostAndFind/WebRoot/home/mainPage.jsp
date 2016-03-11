@@ -36,9 +36,9 @@
 	<div class="navigator-barInner"  id="loginButton">
 	  <%
 	       HttpSession s=request.getSession(true);
-	       s.setAttribute("adminAccount", request.getParameter("adminAccount"));
-	       if(s.getAttribute("adminAccount")!=null){
-	    	   out.println("欢迎你："+s.getAttribute("adminAccount"));
+	       s.setAttribute("userName", request.getParameter("userName"));
+	       if(s.getAttribute("userName")!=null){
+	    	   out.println("欢迎你："+s.getAttribute("userName"));
 	       }else{
 	    	   out.println("登陆");
 	       }
@@ -68,8 +68,8 @@
 		<li class="liClass">网站公告</li>
 		<li class="liClass">关于我们</li>
 	</ul>
-	</nav> <script type="text/javascript">
-       $(function(){   
+	</nav> <script type="text/javascript">    //实现导航栏下拉到某个位置时，固定在窗口顶部
+       $(function(){                      
     	   $(window).scroll(
     			   function(){
     				   var sitemap=  $("#siteMap");
@@ -105,7 +105,7 @@
 		<ul class="showUl">
 			<%
 			Select select = new Select();
-			List eventList = select.search("1");
+			List eventList = select.search("select * from info where eventType='1'");
 			if (!eventList.isEmpty()) {
 				Iterator<Info> iterator = eventList.iterator();
 				for (; iterator.hasNext() == true;) {
@@ -113,7 +113,7 @@
 				out.println("<li class='showLi'><span class='titleSpan'>"
 								+ info.getTitle()
 								+ "</span><span class='dateSpan'>"
-								+ info.getEventDate() + "</span></li>");
+								+ info.getPublishDate() + "</span></li>");
 				}
 			}
 			%>
@@ -123,7 +123,7 @@
 		<div class="showTitle">失物招领</div>
 		<ul class="showUl">
 			<%
-			eventList = select.search("0");
+			eventList = select.search("select * from info where eventType='0'");
 			if (!eventList.isEmpty()) {
 				Iterator<Info> iterator = eventList.iterator();
 				for (; iterator.hasNext() == true;) {
@@ -131,7 +131,7 @@
 				out.println("<li class='showLi'><span class='titleSpan'>"
 								+ info.getTitle()
 								+ "</span><span class='dateSpan'>"
-								+ info.getEventDate() + "</span></li>");
+								+ info.getPublishDate() + "</span></li>");
 					}
 				}
 			%>
